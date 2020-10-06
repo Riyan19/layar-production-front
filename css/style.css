@@ -1,0 +1,124 @@
+
+/* Home Page */
+#slider .carousel-item{
+    height: 600px!important;
+    overflow: hidden;
+}
+
+section#about .card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+section#about .card:hover{
+    background-color:#343a40;
+    color: white;
+    transition: 0.3s;
+}
+section#about .card:hover .btn.btn-dark{
+    background-color: white;
+    color: black;
+}
+section#service .card{
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+section#service .card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+#news .card .card-img-box{
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#news .card .card-img{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+   
+}
+
+#news .card .card-img:hover{
+transform: scale(1.2);
+transition: 0.5s;
+}
+
+
+
+
+
+/* Reusable Component */
+.wrapper{
+    min-height: 100vh;
+}
+
+.nav-link{
+    margin: 0 20px;
+}
+
+#banner > .jumbotron{
+    background-image: url(../img/1.jpg)!important ;
+    background-size: cover;
+    background-position: center;  
+    margin-bottom: 0;
+}
+
+#banner .page-title{
+    display: flex;
+}
+
+#banner .card{
+    display: inline-block;
+    margin: 0 auto;
+    min-width: 200px;
+    position: relative;
+    top: -30px;
+    left: auto;
+    right: auto;
+}
+
+
+
+/* Contact Us */
+
+section#contact .card  .icon{
+    width: 100px;
+}
+
+/* Product Sub Category */
+
+section#product-sub-category .card{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+section#product-sub-category .card:after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(360deg, rgba(0,0,0,0.7819502801120448) 10%, rgba(0,212,255,0) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    transition: 1s;
+}
+
+section#product-sub-category .card h5{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+    z-index: 1;
+    display: none;
+    transition: 1s;
+}
+
+section#product-sub-category .card:hover:after,section#product-sub-category .card:hover h5{
+    display: initial;
+}
+
+
